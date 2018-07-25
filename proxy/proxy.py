@@ -42,6 +42,9 @@ class Agent(object):
 它通过增加代理，保护真正的组建不受意外的影响。
 """
 
+"""
+下面以
+"""
 if __name__ == '__main__':
     r = Agent()
     r.work()

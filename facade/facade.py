@@ -9,6 +9,7 @@
 子系统：他们代表提供餐饮、酒店管理和花卉装饰等服务的系统
 """
 
+
 class EventManager(object):
     """
     门面类,简化接口
@@ -26,31 +27,40 @@ class EventManager(object):
         self.caterer = Caterer()  # 餐饮服务商
         self.caterer.setCuisine()
 
+
 class Hotelier(object):
     def __init__(self):
         print("Arranging the Hotel for Marriage? --")
+
     def __isAvaliable(self):
         print("Is the Hotel free for the event on given day?")
         return True
+
     def bookHotel(self):
         if self.__isAvaliable():
             print("Registered the Booking\n\n")
 
+
 class Florist(object):
     def __init__(self):
         print("Flower Decorations for the event? --")
+
     def setFlowerRequirements(self):
         print("Carnations, Roses and Lilies would bo used for Decorations\n\n")
+
 
 class Caterer(object):
     def __init__(self):
         print("Food Arrangement for the Event")
+
     def setCuisine(self):
         print("Chinese & Continental Cuisine to be served\n\n")
+
 
 class You(object):
     def __init__(self):
         print("You::Whoa!Marriage Arrangements??!!!")
+
     def askEventManager(self):
         print("You::Let is Contact the Event Manager\n\n")
         em = EventManager()
