@@ -2,7 +2,7 @@
 以下是完整的命令模式
 """
 
-from abc import ABCMeta, abstractclassmethod
+from abc import ABCMeta, abstractmethod
 
 
 class Command(metaclass=ABCMeta):
@@ -12,7 +12,7 @@ class Command(metaclass=ABCMeta):
     def __init__(self, recv):
         self.recv = recv
 
-    @abstractclassmethod
+    @abstractmethod
     def execute(self):
         pass
 
