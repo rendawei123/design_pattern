@@ -102,7 +102,7 @@ class DeleteHandler(tornado.web.RequestHandler):
 
 
 """
-视图为同目录下的html文件
+视图为templates目录下的html文件
 
 下面为控制器
 """
